@@ -28,8 +28,5 @@ class Vote(models.Model):
         unique_together = ("poll", "voted_by")
 
 
-        #!!!!!]\
-        #TEST
-
 
         
