@@ -1,7 +1,9 @@
 from rest_framework import serializers
 from .models import Poll, Choice, Vote
 
+#Serializer to turn all the data into JSON format for the user
 class VoteSerializer(serializers.ModelSerializer):
+    #class Meta has many attributes but we use this to denote model and what fields to show
     class Meta:
         model = Vote
         fields = '__all__'
